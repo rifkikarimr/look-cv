@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+* {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* warna */
+    --bg-color: #D8D2CB;
+    --primary: #1C658C;
+    --hover: #D8D2CB;
+    --colorteks: #398AB9;
+
+    /* teks */
+    --h1-font: 2.2rem;
+    --h2-font: 1.1rem;
+    --h3-font: 1rem;
+    --h4-font: 0.5rem;
+    --p-font: 0.9rem;
+    --spacing: 1px;
+}
+
+html {
+    background: var(--primary);
+    color: var(--colorteks);
+}
+
+header {
+    display: inline;
+    color: var(--hover);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+footer {
+    padding: 20px;
+    color: var(--hover);
+    background-color: var(--primary);
+    text-align: center;
+    font-weight: bold;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+aside header {
+    color: var(--colorteks);
+}
+/* navbar {
+    padding: 5px;
+    background-color:var(--bg-color);
+    position: sticky;
+    top: 0;
+    color: var(--bg-color);
+    
+}
+
+navbar li {
+    display: inline;    
+    list-style-type: disc;
+    margin-right: 20px;
+}
+
+navbar a:hover {
+    font-weight: bold;
+} */
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+ }
+
+ .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--bg-color);
+ }
+   
+
+ .content {
+    float: left;
+    width: 75%;
+}
+
+@media screen and (max-width: 1000px) {
+    .content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+ }
